@@ -65,6 +65,23 @@ function payNow() {
   alert("Payment gateway will open here");
 }
 </script>
+  <script>
+function payNow() {
+  var options = {
+    key: "rzp_live_S9oL6fYbFEMjfe",   // YOUR Razorpay TEST Key
+    amount: 26900,             // price × 100
+    currency: "INR",
+    name: "Web Wonders",
+    description: "Product Purchase",
+    handler: function (response) {
+      alert("Payment successful! ID: " + response.razorpay_payment_id);
+    }
+  };
+
+  var rzp = new Razorpay(options);
+  rzp.open();
+}
+</script>
 
 </body>
 </html>
