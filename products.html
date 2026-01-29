@@ -1,0 +1,20 @@
+<!-- Add this in your <head> for the cart system -->
+<link rel="stylesheet" href="https://cdn.snipcart.com" />
+
+<!-- Professional Product Card -->
+<div class="product-card">
+  <img src="product-image.jpg" alt="Product Name">
+  <h3>Professional Gadget</h3>
+  <p>$49.99</p>
+  <button class="snipcart-add-item"
+    data-item-id="gadget-01"
+    data-item-price="49.99"
+    data-item-url="/products.html"
+    data-item-name="Professional Gadget">
+    Add to Cart
+  </button>
+</div>
+
+<!-- Snipcart Script at bottom of <body> -->
+<script async src="https://cdn.snipcart.com"></script>
+<div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
