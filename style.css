@@ -79,3 +79,13 @@ footer {
   object-fit: cover;
   border-radius: 10px;
 }
+.product {
+  position: relative;
+  z-index: 1;
+}
+
+.buy-btn {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
