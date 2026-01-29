@@ -1,0 +1,25 @@
+<!-- In your <head> section, link the cart's CSS -->
+<link rel="stylesheet" href="https://cdn.snipcart.com" />
+
+<!-- A div for a specific product on your page -->
+<div class="product-card">
+  <img src="product-photo-small.jpg" alt="Product Name">
+  <h3>Product Name</h3>
+  <p>₹999</p>
+
+  <!-- Button to add item to the cart, handled by Snipcart's API -->
+  <button class="snipcart-add-item"
+    data-item-id="product-001"
+    data-item-price="999.00"
+    data-item-url="/"
+    data-item-name="Product Name"
+    data-item-image="product-photo-small.jpg"
+    data-item-custom1-name="Size"
+    data-item-custom1-options="Small|Medium|Large"> <!-- Handles variations -->
+    Buy Now
+  </button>
+</div>
+
+<!-- Before your closing </body> tag, include the cart's JS -->
+<script async src="https://cdn.snipcart.com"></script>
+<div hidden id="snipcart" data-api-key="YOUR_PUBLIC_API_KEY"></div>
